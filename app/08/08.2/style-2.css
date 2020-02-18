@@ -1,0 +1,8 @@
+*{
+font-size:28px;
+color:#ccc;
+}
+div,
+p {
+  display: none;
+}

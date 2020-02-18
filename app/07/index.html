@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="style.css">
+  <title> Practicle wich JS</title>
+</head>
+
+<body>
+    <div>
+      Radio btn
+      <p>Chose one best city:</p>
+      <input type="radio" class="radio-input" id="radio-btn-1" name="citys" value="kiev" checked>
+      <label for="radio-btn-1">Kiev </label>
+
+      <input type="radio" class="radio-input" id="radio-btn-2" name="citys" value="moscow" >
+      <label for="radio-btn-2">Moscow</label>
+
+      <input type="radio" class="radio-input" id="radio-btn-3" name="citys" value="paris">
+      <label for="radio-btn-3">Paris</label>
+    <!-- name для того чтобы выбрать только один radio btn,  checked по умолчанию выбор. В radio btn выбор должен быть обязательно-->
+    </div>
+  <div>
+  <button class="btn">Push</button>
+  </div>
+
+<!--Radio кнопки в которых velue выводиться циклом -->
+  <div class="radio-btn-more">
+    <p>Chose your favorite watter: </p>
+    <input type="radio" class="drinks" id ='drink-1' name='watter' value='kola' checked>
+    <label for="drink-1">Kola</label>
+
+    <input type="radio" class="drinks" id ='drink-2' name='watter' value='juice'>
+    <label for="drink-2">Juice</label>
+
+
+    <input type="radio" class="drinks" id ='drink-3' name='watter' value='tea'>
+    <label for="drink-3">Tea</label>
+
+    <button class="chose">Chose</button>
+  </div>
+<!--Radio кнопки в которых velue выводиться циклом -->
+<!-- изменение цвета параграфов через JS -->
+  <p class="animals">Cat</p>
+  <p class="animals">Bird</p>
+  <p class="animals">Fish</p>
+  <div> Чтобы изменить цвет списка зверей нажмите на кнопку
+    <button class="change-color">Сhange color</button></div>
+  
+<!-- изменение цвета параграфов через JS -->
+<!-- Выпадающий список -->
+<hr>
+<p>Выберите список чтобы добавить его в консоль</p>
+<select name="" id="my-select">
+    <option value="one">1</option>
+    <option value="two">2</option>
+    <option value="three">3</option>
+</select>
+
+<button class="select">Select</button>
+<!-- Выпадающий список -->
+
+  <script src="script.js"></script>
+</body>
+
+</html>
