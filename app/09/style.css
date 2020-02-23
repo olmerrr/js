@@ -1,0 +1,21 @@
+.block{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 150px;
+  height: 150px;
+  background: bisque;
+  margin: 50px;
+}
+.box {
+  margin: 80px 0;
+  max-width: 1200px;
+  height: 200px;
+  border: 3px solid green;
+}
+.sqr {
+  width: 30px;
+  height: 30px;
+  background: indigo;
+  border-radius: 50%;
+}
