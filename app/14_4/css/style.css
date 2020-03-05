@@ -1,0 +1,33 @@
+*{
+  box-sizing: border-box;
+}
+html{
+  background-color: rgba(160, 223, 14);
+}
+body{
+  background-color: #ccc;
+  cursor: pointer;
+  height: 300px;
+  width: 300px;
+}
+#one{
+  width: 100px;
+  height: 200px;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+#two{
+  width: 50px;
+  height: 100px;
+  background-color: #f243ff;
+  color:#fff;
+  cursor: pointer;
+}
+#three{
+  border:2px solid #ccc;
+  width: 220px;
+  height: 300px;
+  color:#fff;
+  cursor: pointer;
+}

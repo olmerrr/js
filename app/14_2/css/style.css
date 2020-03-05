@@ -1,0 +1,50 @@
+*{
+  box-sizing: border-box;
+}
+.round-close{
+  border: 1px solid red;
+  border-radius: 100%;
+  background-color: red;
+  color:#fff;
+  width: 24px;
+  height: 24px;
+  text-align: center;
+  line-height: 16px;
+  outline: none;
+}
+.block-modal-test{
+  width: 250px;
+  height: 340px;
+  border: 2px solid black;
+  margin: 100px auto;
+  position: relative;
+  overflow: hidden;
+}
+.read-rools,
+.read-rools-back,
+.read-rools-second-back{
+  cursor: pointer;
+  font-weight: 700;
+}
+
+.form-slider{
+  width: 500px;
+  height: 340px;
+  background-color: #554;
+  margin-left: 0;
+  transition: all ease 1s;
+  
+}
+.left-50,.right-50  {
+  width: 50%;
+  float:left;
+  background-color: red;
+  min-height: 50px;
+  padding: 10px;
+}
+.right-50{
+  max-height: 350px;
+  color:#fff;
+  overflow-y: scroll;
+  background-color: blue;
+}
