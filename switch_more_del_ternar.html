@@ -1,0 +1,62 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  
+
+<script>
+'use strict';
+
+/**
+ * @param {string} task
+ *
+ * @returns string
+ */
+ manageHomeRoutines();
+function manageHomeRoutines (task){
+  switch (task){
+    case 'clean':
+    return 'petya';
+
+    case 'make_breakfast':
+    return 'misha';
+
+    case 'write_code':
+    return 'petya';
+
+    case 'adjust_lights':
+    return 'vasya';
+
+    case 'review_pull_request':
+    return 'misha';
+
+    case 'set_up_an_alarm':
+    return 'siri';
+
+    case 'check_weather':
+    return'siri';
+
+    case 'take_out_garbage':
+    return 'vasya' ||'masha';
+
+    default:return 'error';
+  }
+}
+// function manageHomeRoutines(task) {
+//   return task === 'clean' ? 'petya'
+//     : task === 'make_breakfast' ? 'misha' : task === 'write_code' ? 'petya'
+//       : task === 'adjust_lights' ? 'vasya' : task === 'review_pull_request'
+//         ? 'misha'
+//         : task === 'set_up_an_alarm' ? 'siri' : task
+//         === 'check_weather' ? 'siri'
+//           : task === 'take_out_garbage' ? 'vasya' : 'masha';
+// }
+
+</script>
+</body>
+</html>
