@@ -1,0 +1,61 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  
+
+<script>
+'use strict';
+
+
+
+function recommendRoom(adultsCount, childrenCount=0, babiesCount) {
+  debugger;
+  if (adultsCount == 0){
+    return 'only witch adults'
+  }
+  if (adultsCount+childrenCount+babiesCount<=4||adultsCount<=2 && childrenCount<=1 &&babiesCount<=1 ){
+  return "small room"
+  }
+  if (adultsCount+childrenCount+babiesCount<=4||adultsCount<=2 && childrenCount<=1 &&  babiesCount<=2 ){
+  return "small room "
+  }
+  if(adultsCount+childrenCount+babiesCount<=8
+      || adultsCount<=2
+      && childrenCount<=1
+      && babiesCount<=1){
+    return "small room + extra bed"
+  
+  }
+    if(adultsCount+childrenCount+babiesCount<=8
+      || adultsCount<=3
+      && childrenCount<=2)
+     {
+    return 'big room'
+  
+  }
+  if(adultsCount+childrenCount+babiesCount<=8
+      || adultsCount<=7
+     
+      && childrenCount<=2)
+     {
+    return 'big room + extra bed'
+  
+  }
+    if(adultsCount+childrenCount+babiesCount<=8
+      || adultsCount<=8)
+     {
+    return 'big room'
+  
+  }
+
+ }
+ console.log(recommendRoom(0,2,2));
+</script>
+</body>
+</html>
