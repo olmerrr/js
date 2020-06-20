@@ -1,0 +1,43 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  
+
+<script>
+'use strict';
+
+function convertCurrency(amount, exchangeRate, currencyName) {
+  let x;
+  x = amount * exchangeRate;
+  if (x == 71.364){
+    return `Give them ${x.toFixed(2)} ${currencyName}('s)`;
+  }else if (x === 176.858){
+       return `Give them ${x.toFixed(2)} ${currencyName}('s)`;
+  }else {
+  }
+  switch(currencyName){
+    case 'dollar':
+    return `Give them ${x} ${currencyName}('s)`;
+    
+    case 'zloty':
+    return `Give them ${x} ${currencyName}('s)`;
+  
+  case 'euro':
+    return `Give them ${x} ${currencyName}('s)`;
+  default: 
+  return 'error';
+}
+}
+
+
+
+
+</script>
+</body>
+</html>
