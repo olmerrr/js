@@ -1,0 +1,53 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  
+
+<script>
+'use strict';
+
+function compareNumbers(a, b, c) {
+  return a < 10 && 10 <= b  && b <= 100 
+  && 100 < c && c < 250 || 
+  a > 200 && 200 < b && b < c;
+}
+let newInt = 12.51;
+
+console.log(newInt.toFixed(0));
+console.log('2');
+
+
+///**///
+const input = '2';
+console.log(+input);
+if (!isNaN(input)){
+  console.log('OK');
+}else{
+  console.log('problem');
+}
+///**///
+const inputMore = ' ';
+console.log(+inputMore)
+if (inputMore.trim() && isFinite(inputMore)){
+  console.log('OK');
+}else {
+  console.log('problems');
+}
+console.log('-------------------------***----------------');
+for (let i = 0; i < 10; i++){
+  const x = Math.floor(Math.random() * 6 + 1);
+  console.log(x);
+}
+
+let arr = 123;
+let brr = 'asc';
+console.log(arr +brr)
+</script>
+</body>
+</html>
