@@ -1,0 +1,67 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  
+
+<script>
+'use strict';
+
+const word = 'abcdefbc';
+const part = 'bc';
+console.log(
+  word.includes(part),//позволяет убедиться что part est6 v word
+  word.indexOf(part,3), //где именно начинается part в строке word, 
+  // второй параметр с какого индекса начинать искать (если не найдет результатом будет -1)
+  word.lastIndexOf(part), //  где именно заканчивается (или начинает с конца) part в строке word
+  word.startsWith(part), // проверяет что строка word начинается с part
+  word.endsWith(part) // проверяет что строка word заканчивается с part
+
+);
+
+
+////search
+const model = "Nokia 1100";
+const search = 'nokia';
+
+const conditional = model.toLowerCase().includes(search.toLowerCase());
+if(conditional){
+  console.log('found');
+}else{
+  console.log('not found')
+}
+
+const name1 = 'як';
+const name2 = 'як';
+
+if(name1.localeCompare(name2) >= 0){
+  console.log('trues')
+}
+const sliceWord = '1413 3434 3434 1234';
+const newSliceWord = sliceWord.slice(-4);//четыри цифры с конца вырезать и сохранить в новую переменную
+
+console.log(newSliceWord.padEnd(19,'**** '));
+ 
+ console.log(newSliceWord.padEnd(5,'*'));
+ console.log('-'.repeat(16));// repeat - повторить (раз)
+
+ const newWord = 'some changes in string';
+ console.log(newWord.replace('some', 'new')); //первый параметр какое слово, второй на какое заменить,заменяет первое попавшееся слово
+ console.log(newWord);
+
+ const spacePlusWord = ' Word ';
+ console.log(sleshWord.replace(/ /g,'-')); //заменили пробелы на - во всей строке
+
+
+ const guestsInput = 'sada 34 sd';
+ const newInput = parseInt(guestsInput); 
+  console.log(newInput) ;
+
+ </script>
+</body>
+</html>
