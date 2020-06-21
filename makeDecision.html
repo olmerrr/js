@@ -1,0 +1,28 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  
+
+<script>
+'use strict';
+
+
+function makeDecision(fuelRemaining, distance, fuelConsumption) {
+  // write code here
+ let leftGasOnDistanse = ((fuelConsumption * distance) / 100); // столько я потрачу топлива чтобы добраться к distance
+  if (leftGasOnDistanse <= fuelRemaining){
+    return 'reach gas station by themselves';
+  }else {
+    return 'ask for help';
+    }
+  }
+  console.log(makeDecision(2,45,5));
+</script>
+</body>
+</html>
