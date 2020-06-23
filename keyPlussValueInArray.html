@@ -1,0 +1,50 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  
+
+<script>
+'use strict';
+let point = {
+  x:1,
+  y:2,
+  z:3,
+  0:10,
+  2:5,
+  '-2':'11'
+}
+for(let key in point){
+  console.log(key,point[key]);
+}
+let user = {
+  name: 'Anton',
+  age: 29,
+  sex: 'male'
+}
+
+//возможность получить пары ключей в виде массива
+// const keys = Object.keys(user);
+// console.log(keys);
+//возможность получить пары ключей в виде массива
+// ---***---
+
+//возможность получить пары свойств в виде массива
+// const values = Object.values(user);
+// console.log(values);
+//возможность получить пары свойств в виде массива
+// ---***---
+
+//возможность получить пары ключи-свойства в виде массива из двух значений
+const entries = Object.entries(user);
+console.log(entries);
+//возможность получить пары ключи-свойства в виде массива из двух значений
+
+ </script>
+</body>
+</html>
