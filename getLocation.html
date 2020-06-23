@@ -1,0 +1,33 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  
+
+<script>
+'use strict';
+
+function getLocation(coordinates, commands) {
+  let x = coordinates.shift();
+  let y = coordinates.pop();
+  for (let i=0; i<commands.length; i++) {
+   if (commands[i]=='forward') {y+=1;}
+   if (commands[i]=='back') {y-=1;}
+   if (commands[i]=='right') {x+=1;}
+   if (commands[i]=='left') {x-=1;}
+  } let result = [x,y]; console.log(result);
+  return result;
+  }
+  getLocation();
+
+
+
+
+ </script>
+</body>
+</html>
