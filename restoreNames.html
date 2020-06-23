@@ -1,0 +1,26 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  
+
+<script>
+'use strict';
+
+function restoreNames(users) {
+  for (let key in users) {
+    if (users[key].firstName == undefined) {
+      let name = users[key].fullName.split(' ');
+      users[key].firstName = name[0];
+      console.log(users.firstName)
+    }
+  } 
+}
+ </script>
+</body>
+</html>
