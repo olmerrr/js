@@ -1,0 +1,35 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  
+
+<script>
+'use strict';
+
+function getSpeedStatistic(testResults) {
+  if (testResults == 0){
+    return [0,0,0];
+  }else {
+    let min = Math.min.apply(null, testResults);
+    let max = Math.max.apply(null, testResults);
+    let middle = 0;
+    let sum = 0;
+    for (let i = 0;i < testResults.length; i++){
+      sum = sum + testResults[i];
+      middle = Math.floor(sum / testResults.length)
+    }
+    return [min,max,middle];
+  }
+}
+getSpeedStatistic([1,20,8,2,10]);
+
+
+ </script>
+</body>
+</html>
