@@ -1,0 +1,32 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+<script>
+'use strict';
+
+function arraysSimilar(){
+	let arr1 = [1,2,3,4,5];
+	let arr2 = [5,4,3,2,1];
+	arr1.sort();
+	arr2.sort();
+
+	if (arr1.length !== arr2.length){
+		return 'sorry,arr1 length !== arr2 length';
+	}else{
+	for(let i = 0; i < arr1.length;i++){
+		if(arr1[i] !== arr2[i]) 
+		return false
+	}
+		return true;
+	}
+}
+console.log(arraysSimilar());
+</script>
+</body>
+</html>
