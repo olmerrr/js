@@ -1,0 +1,30 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+<script>
+'use strict';
+
+
+function distinct(a) {
+  a = [1,2,3,'s','s']
+  const items = {};
+  const res = [];
+  for(let i = 0; i < a.length; i++){
+    if(!items[ a[i] ]) 
+      res.push(a[i]);
+      items[a[i]] = true;  
+
+  }
+  return res;
+  // return Array.from( new Set(a)); //тоже самое в одну строчку
+}
+console.log(distinct())
+</script>
+</body>
+</html>
