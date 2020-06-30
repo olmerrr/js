@@ -1,0 +1,23 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  
+<p>Дана строка input, состоящая из цифр. Верните новую строку, в которой цифры из input меньше 5 заменены на 0, а цифры 5 и больше - на 1.</p>
+<script>
+'use strict';
+function fakeBin(input) {
+
+let res = input.replace(/([0-4])|([5-9])/g, (_, p1, p2) =>  p1 ? 0 : 1);
+return res;
+}
+
+console.log(fakeBin('452067942002342560'))
+ </script>
+</body>
+</html>
