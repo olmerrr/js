@@ -1,0 +1,24 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  
+<p>Числа, заканчивающиеся нулями, выглядят не очень круто. Твоя задача избавиться от всех нулей в конце числа.
+  0 должен остаться 0.</p>
+<script>
+'use strict';
+ function noBoringZeros(n) {
+  let a = String(n);
+  // a = a.replace(/^0+/, '');
+a = a.replace(/0*$/,'')//удаляеет нули вконце, а выще вначале
+return +a;
+}
+console.log(noBoringZeros(452000))
+ </script>
+</body>
+</html>
