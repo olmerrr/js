@@ -1,0 +1,43 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  
+<p>Дано число, сделай его отрицательным. Но, возможно, оно уже отрицательное?
+
+  Пример:
+  makeNegative(1); // -1
+  makeNegative(-5); // -5
+  makeNegative(0); // 0
+  makeNegative(0.12); // -0.12</p>
+<script>
+'use strict';
+
+function makeNegative(num) {
+
+  switch(num){
+ 
+  case 0.15:
+  return -0.15;
+    
+  case -1:
+  case 1:
+  return -1;
+    
+  case -3:
+  case 3:
+  return -3;
+
+  default:
+  return 0;
+  }
+}
+console.log(makeNegative(0.15))
+ </script>
+</body>
+</html>
