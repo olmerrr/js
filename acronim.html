@@ -1,0 +1,29 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  
+
+<script>
+var str     = "Java Script Object Notation";
+var matches = str.match(/\b(\w)/g);              // ['J','S','O','N']
+var acronym = matches.join('');   // JSON
+
+
+//и еще такой варик\\
+function abbrevName(name){
+
+var nameArray = name.split(" ");
+return (nameArray[0][0] + "." + nameArray[1][0]).toUpperCase();
+}
+//и еще такой варик\\
+
+
+</script>
+</body>
+</html>
