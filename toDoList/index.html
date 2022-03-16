@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>To Do list on JS</title>
+</head>
+<body>
+  
+<div class="todo-container">
+  <input type="text" placeholder="What i need do" class="field">
+  <button class="btn-add">Add</button>
+</div>
+
+<ul class="todo-list" id="todo-list"> </ul>
+
+  <style>
+    body {
+      padding: 0;
+      margin: 0;
+      background-color: #39a573;
+    }
+
+    .todo-container {
+      margin: 0 auto;
+      padding: 20px 8px;
+    }
+    
+    .btn-add,
+    .todo-item {
+      cursor: pointer;
+    }
+
+    .todo-item {
+      color: #fff;
+      list-style: number;
+    }
+
+  </style>
+  <script src="app.js"></script>
+</body>
+</html>
