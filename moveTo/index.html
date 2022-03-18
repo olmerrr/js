@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <header id="top"class="section header">
+   
+    <h2>Hello moveTo</h2>
+   
+    <p>
+        Feature.js is a fast, simple and light­weight browser feature detec­tion 
+        library. It has no dependencies and weighs only 1kb minified and gzipped. 
+        Feature.js automati­cally initia­lizes itself on page load, so you don’t have to.
+        It doesn’t, however, run any tests while ini­tia­lizing, so it will only ever run 
+        them when you ask it to. This makes it perform very fast.
+    </p>
+
+   <div class="action">
+     <button data-target="#contact" class="button">Contacts</button>
+     <button data-target="#features" class="button">Features</button>
+   </div>
+
+  </header>
+
+  <section id="features" class="section features">
+    <h2>Features</h2>
+    <p>
+      There are few gotchas related to browser feature detection in general and these things are good to
+       keep in mind when using the Feature.js library.
+    </p>
+  </section>
+
+  <section id="contacts" class="section contacts">
+    <h2>Contacts</h2>
+    <button data-target="#top" class="button">To Top</button>
+
+    <footer>
+      <p>Kiev, st. Velyka Vasylkivska, 45</p>
+      <a href="tel:+0800300800 ">0800300800</a>
+    </footer>
+  </section>
+  <button  type="button" class="js-trigger" data-target="#target" data-mt-duration="1300"></button>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moveTo/1.8.2/moveTo.min.js" integrity="sha512-K8tGrJxPw5dbYRLSOdH+dZ9SVZwrtMffca3bBOe+IWAgl4SDi55bIR2IUnF+p+PzReEDeKgoIBHpuq7R9043GA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="app.js"></script>
+
+</body>
+</html>
+
+<style>
+  body, html {
+    padding: 0;
+    margin: 0;
+    background-color: transparent;
+  }
+  .section {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  } 
+
+  h2 {
+    font-size: 26px;
+    font-weight: 600;
+  }
+
+  p {
+    font-size: 18px;
+    max-width: 1200px;
+    text-align: center;
+  }
+
+  a {
+    font-size: 22px;
+    color: inherit;
+    text-decoration: none;
+  }
+  button {
+    width: 100px;
+    height: 36px;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+  }
+  .header {
+    background-color: rgba(47, 96, 231, 0.712);
+    color: #fff;
+  }
+  
+  .contacts {
+    background-color: rgba(255, 255, 255, 0.774);
+    color: black;
+  }
+
+  .features {
+    background-color: rgb(50, 243, 217);
+    color: #fff;
+  }
+  
+  
+</style>
