@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+    <div class="container">
+    <button class="toggle-btn">Click here</button>
+    
+    <section class="info hide">
+      <h2>Promise</h2>
+      <p> The Promise object represents the eventual completion (or failure) of 
+        an asynchronous operation and its resulting value.
+      </p>
+      <h2>
+        Description
+      </h2>
+      <p>
+        A Promise is a proxy for a value not necessarily known when the promise is created. It allows you to associate handlers with an asynchronous action's eventual success value or failure reason. This lets asynchronous methods return values like synchronous methods: instead of immediately returning the final value, the asynchronous method returns a promise to supply the value at some point in the future.
+      </p>
+    </section>
+
+    </div>
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha512-z4OUqw38qNLpn1libAN9BsoDx6nbNFio5lA6CuTp9NlK83b89hgyCVq+N5FdBJptINztxn1Z3SaKSKUS5UP60Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="app.js"></script>
+</body>
+</html>       
+
+
+<style>
+  .toggle-btn {
+    width: 100px;
+    height: 32px;
+    text-align: center;
+    font-weight: 600;
+    background-color: transparent;
+    border-radius: 4px;
+    color: blueviolet;
+    cursor: pointer;
+    transition: background-color 0.5s ease;
+    margin-bottom: 20px;
+  }
+  .toggle-btn:hover {
+    background-color: rgb(53, 52, 52);
+    color: #fff;
+  }
+  .container {
+    max-width: 700px;
+    padding: 0 10px;
+    margin: 0 auto;
+  }
+  .info {
+    padding: 10px;
+    border-radius: 4px;
+    box-shadow: 0 0 2px 1px rgba(0,0,0,0.1);
+  }
+  .hide {
+    opacity: 0;
+    height: 0;
+    overflow: hidden;
+  }
+</style>
