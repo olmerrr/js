@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="assets/style.css"/>
+</head>
+<body>
+
+  <header class="header">
+    <div class="container">
+    <div class="header__title">Todo</div>
+    </div>
+  </header>
+
+  <main class="main">
+    <div class="container">
+    <form autocomplete="off" class="form">
+      <input type="text" id="new-todo" class="new-todo" placeholder="to do"/>
+      <select name="user" id="user-todo">
+        <option disabled selected>select user</option>
+      </select>
+      <button>Add to do</button>
+      
+    </form>
+
+    <ul id="todo-list"></ul>
+  </div>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>
