@@ -83,12 +83,16 @@
     event.preventDefault();
 
     // console.log(form.todo);
-    // console.log(form.user);
-    createTodo({
-      userId: Number(form.user.value),
-      title: form.todo.value,
-      completed: false,
-    });
+    // console.log(form.user.value);
+    if (form.todo.value && form.todo.value.length && !form.user.value.includes('select user')) {
+      createTodo({
+        userId: Number(form.user.value),
+        title: form.todo.value,
+        completed: false,
+      });
+    } else {
+      alert('Please write information in todo field and choose user')
+    }
   }
   function handleClose() {
     const todoId = this.parentElement.dataset.id;
